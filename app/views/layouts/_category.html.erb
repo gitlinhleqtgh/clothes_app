@@ -1,0 +1,22 @@
+<div class="col-lg-3">
+  <h1 class="h2 pb-4"><%= t("store.category") %></h1>
+    <% @category_parents.each do |category_parent| %>
+      <ul class="list-unstyled templatemo-accordion">
+        <li class="pb-3">
+          <%= link_to root_path(cate_id: category_parent.id, class: "d-flex justify-content-between h3 text-decoration-none") do %>
+            <%= category_parent.name %>
+          <% end %>
+          <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+          <% category_parent.sub_categories.each do |category_children| %>
+            <ul class="show list-unstyled pl-3">
+              <li>
+                <%= link_to root_path(cate_id: category_children.id, class: "text-decoration-none") do %>
+                  <%= category_children.name %>
+                <% end %>
+              </li>
+            </ul>
+          <% end %>
+        </li>
+      </ul>
+    <% end %>
+</div>

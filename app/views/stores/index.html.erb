@@ -1,0 +1,20 @@
+<!-- Start Content -->
+    <div class="container py-5">
+        <div class="row">
+          <%= render "layouts/category" %>
+
+            <div class="col-lg-9">
+                <%= render "sort" %>
+                <div class="row">
+                  <%= render "item" %>
+                </div>
+                <div div="row">
+                    <ul class="pagination pagination-lg justify-content-end">
+                        <li class="page-item">
+                            <%= will_paginate @products, class: "page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0"%>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
