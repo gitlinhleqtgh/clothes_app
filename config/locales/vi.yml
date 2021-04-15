@@ -19,3 +19,11 @@ vi:
     quantity_on_store: "Số lượng trong Cửa hàng:"
     description: "Chi tiết:"
     discount: "Giảm giá"
+  login:
+    login: "Đăng nhập"
+    signup: "Đăng ký"
+    success: "Đăng nhập thành công"
+    failed: "Đăng nhập không thành công"
+    loggout_success: "Bạn đã đăng xuất"
+    signup_success: "Đăng ký thành công"
+    signup_failds: "Đăng ký không thành công"
