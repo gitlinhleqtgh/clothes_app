@@ -1,3 +1,6 @@
 page: 9
 image:
   default: 500
+user:
+  email:
+    size: 50

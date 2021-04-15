@@ -19,3 +19,11 @@ en:
     quantity_on_store: "Quantity on Store :"
     description: "Description:"
     discount: "Discount"
+  login:
+    login: "Login"
+    signup: "Sign up"
+    success: "Login success"
+    failed: "Login failed"
+    loggout_success: "You are logouted"
+    signup_success: "Register success"
+    signup_failds: "Register failed"

@@ -7,6 +7,7 @@ ruby "2.7.0"
 
 gem "active_storage_validations", "0.8.2"
 gem "bootstrap", "~>4.3.1"
+gem "bcrypt", "~> 3.1", ">= 3.1.16"
 gem "config", "2.2.1"
 gem "faker", "~> 2.17"
 gem "font_awesome5_rails"

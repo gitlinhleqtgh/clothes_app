@@ -1,0 +1,17 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <h2 class="active"> <%= t("login.signup") %> </h2>
+    <div class="fadeIn first">
+      <img src="/assets/logo.jpg" id="icon" alt="User Icon" />
+    </div>
+    <%= form_for(@user, url: signup_path) do |f| %>
+    <form>
+      <%= render "shared/error_messages", object: @user %>
+      <%= f.email_field :email, type: "text", class: "fadeIn second", placeholder: "email" %>
+      <%= f.password_field :password, type: "text", class: "fadeIn third", placeholder: "password" %>
+      <%= f.password_field :password_confirmation, type: "text", class: "fadeIn third", placeholder: "password confirmation"%>
+      <%= f.submit t("login.signup"), type: "submit", class: "fadeIn fourth login" %>
+    </form>
+    <% end %>
+  </div>
+</div>
